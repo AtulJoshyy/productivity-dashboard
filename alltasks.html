@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="branding-top">
+                <img src="/assets/logo.png" alt="">
+                <h1>Spacify</h1>
+            </div>
+            
+            <div class="nav-links">
+                <ul>
+                    <div class="link">
+                        <i class="material-icons-round">home</i>
+                        <a href="index.html">Dashboard</a>
+                    </div>
+                    <div class="link">
+                        <i class="material-icons-round">article</i>
+                        <a href="index.html">All Tasks</a>
+                    </div>
+                    <div class="link">
+                        <i class="material-icons-round">event</i>
+                        <a href="index.html">Calendar</a>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <div class="greeting">
+                    <h2>Good Morning, Atul </h2>
+                    <img src="/assets/sunny.png" alt="">
+                </div>
+                <div class="user-info">
+                    <div class="search-bar">
+                        <form>
+                            <button type="submit"><i class="material-icons-round">search</i></button>
+                            <input type="text" placeholder="Search.." name="search">
+                        </form>
+                    </div>
+                    
+                    <i class="material-icons-round">notifications</i>
+                    <img src="/assets/profile.png" alt="Profile Picture" >
+                </div>
+            </div>
+            <div class="content">
+                <div class="main-tasks">
+                    
+                    <div class="todo-list">
+                        <div class="todo-header">
+                            <h3>Today</h3>
+                            <p><i class="material-icons-round">unfold_more</i></p>
+                        </div>
+                        <div class="todo-input">
+                            <form>
+                                <input class="task-input" id="text-input" type="text" placeholder="Add a task" onchange="checkTodoInputEmpty"/>  
+                                <button class="todo-add-btn"><i class="material-icons-round">add</i></button>
+                            </form>                                         
+                        </div>
+                        <!-- <div class="todo">
+                            <button class="complete-btn" type="submit"><i class="material-icons-round">radio_button_unchecked</i></button>                                                   
+                            <li></li>
+                        </div> -->
+                    </div>
+
+                    
+                </div>
+                <div class="main-stats">
+                    <div class="weather-report">
+                        <div class="weather-text">
+                            <p id="current-day">Day</p>
+                            <a id="current-month">Month</a>
+                            <a id="current-date">Date</a>
+                        </div>
+                        <h2>28 &#8451</h2>
+                        <img src="/assets/sunny.png" alt="">
+                    </div>
+                    <div class="task-insight">
+                        <div class="insight-tab">
+                            <div class="insight-tab-left">
+                                <img src="/assets/earth.png" alt="">
+                                <h3>Total Tasks</h3>
+                            </div>
+                            <div class="insight-tab-right">
+                                <p>16</p>
+                                <i class="material-icons-round">chevron_right</i>
+                            </div>
+                            
+                        </div>
+                        <div class="insight-tab">
+                            <div class="insight-tab-left">
+                                <img src="/assets/rocket.png" alt="">
+                                <h3>Completed</h3>
+                            </div>
+                            <div class="insight-tab-right">
+                                <p>16</p>
+                                <i class="material-icons-round">chevron_right</i>
+                            </div>
+                            
+                        </div>
+                        <div class="insight-tab">
+                            <div class="insight-tab-left">
+                                <img src="/assets/tree.png" alt="">
+                                <h3>Remaining</h3>
+                            </div>
+                            <div class="insight-tab-right">
+                                <p>16</p>
+                                <i class="material-icons-round">chevron_right</i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="today-stats-card">
+                        <div class="today-stats-card-description">
+                            <h3>Tasks Completed Today</h3>
+                            <p>5 tasks completed</p>
+                        </div>
+                        <div class="circular">
+                            <div class="inner"></div>
+                            <div class="number">75%</div>
+                            <div class="circle">
+                               <div class="bar left">
+                                  <div class="progress"></div>
+                               </div>
+                               <div class="bar right">
+                                  <div class="progress"></div>
+                               </div>
+                             </div>
+                          </div>
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

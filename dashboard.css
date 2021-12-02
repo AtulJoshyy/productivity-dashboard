@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+body > div > div.sidebar > div.branding-top > img {
+  width: 48px;
+}
+.greeting img {
+  width: 48px;
+  margin-left: 10px;
+}
+.greeting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff2f;
+  min-height: 100vh;
+  width: 250px;
+  padding: 20px;
+}
+.branding-top {
+  display: flex;
+  align-items: center;
+}
+.branding-top h2 {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.main-content {
+  background: #f1f1f1;
+  min-height: 100vh;
+  min-width: calc(100% - 250px);
+  margin-left: 250px; /* This is so that the sidebar dosent cover the main-contnet */
+}
+
+.header {
+  background: #f1f1f1;
+  padding: 50px 20px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body > div > div.main-content > div.header > div.user-info > img {
+  border-radius: 50%;
+  width: 48px;
+  cursor: pointer;
+}
+.content {
+  background: #f1f1f5;
+  /* height: calc(100vh - 70px); */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.header-options i{
+    cursor: pointer;
+    
+}
+i{
+    padding: 5px;
+    border-radius: 50%;
+    transition: 200ms all ease-in-out;
+}
+i:hover{
+    background-color: rgb(219, 219, 219);
+    border-radius: 50%;
+
+}
+.user-info i {
+  font-size: 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.user-info form button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+.user-info input {
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #E7E7EF;
+}
+.search-bar {
+  background: #E7E7EF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 200px;
+  margin-top: 10px;
+}
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-menu p{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+.link {
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.link a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.link:hover {
+  background: rgb(245, 245, 245);
+  color: #0059ff;
+}
+.link:hover a {
+  color: #0059ff;
+}
+
+.main-tasks {
+  background: #f7f7f7;
+  width: 100%;
+  overflow: auto;
+  border-radius: 30px;
+}
+.main-stats {
+  background: #f1f1f1;
+  width: 55%;
+  border-radius: 30px;
+}
+.todo form input {
+  min-width: 100%;
+}
+
+.todo-list {
+  background: #ffffff23;
+  border-radius: 16px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.068);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  margin: 15px;
+
+  padding: 15px 5px;
+  border-radius: 20px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 96.5%;
+}
+.todo {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 97.5%;
+  cursor: pointer;
+}
+.todo-input {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 97.5%;
+  cursor: pointer;
+}
+.todo-input input {
+  padding: 12px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.todo-input form {
+  width: 100%;
+}
+.todo-input button {
+  background-color: white;
+  border: none;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.todo-input i {
+  /* pointer-events: none; */
+}
+.completed-btn {
+  background: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.todo i {
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+  pointer-events: none;
+}
+.todo button {
+  background: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.todo li {
+  list-style: none;
+  margin-left: 10px;
+}
+.todo-list h3,
+.todo-list p {
+  margin: 3px 20px;
+}
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-header i {
+  cursor: pointer;
+}
+
+.today-stats-card {
+  /* background: rgb(51, 51, 51); */
+  /* From https://css.glass */
+  background: #ffffff23;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.068);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+
+  color: rgb(58, 58, 58);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 15px;
+}
+.today-stats-card-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.circular {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+.circular .inner {
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background: #f4f4f6;
+
+  border-radius: 100%;
+}
+.circular .number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3b3b3b;
+}
+.circular .bar {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(209, 209, 209);
+
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+  border: radius 50%;
+  background: linear-gradient(90deg, #00ffbf 0%, #45ffb8 100%);
+}
+.circle .left .progress {
+  z-index: 1;
+  animation: left 1s linear both;
+}
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  transform: rotate(180deg);
+  z-index: 3;
+}
+.circle .right .progress {
+  animation: right 1s linear both;
+  animation-delay: 1s;
+}
+@keyframes right {
+  100% {
+    transform: rotate(100deg);
+  }
+}
+.task-insight {
+  /* background-color: #F4F4F6; */
+  background: #ffffff23;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.068);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  color: #aaaaaa;
+  border-radius: 20px;
+  margin: 15px;
+  padding: 1px;
+}
+.insight-tab-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insight-tab-left h3 {
+  margin-left: 15px;
+}
+
+.insight-tab-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.insight-tab-right p {
+  margin-right: 15px;
+}
+.insight-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 10px;
+}
+.insight-tab img {
+  width: 48px;
+  border-radius: 15px;
+}
+.weather-report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.weather-report img {
+  width: 48px;
+}
+
+.button-disabled {
+  pointer-events: none;
+}
+.insight-tab {
+  cursor: pointer;
+}
+.insight-tab:nth-child(1) {
+  color: #ff999e;
+}
+.insight-tab:nth-child(2) {
+  color: #70d1c7;
+}
+.insight-tab:nth-child(3) {
+  color: #fac733;
+}
+
+.insight-tab:nth-child(1):hover {
+  background-color: #fdd4d7;
+}
+.insight-tab:nth-child(2):hover {
+  background-color: #dbf5f1;
+}
+.insight-tab:nth-child(3):hover {
+  background-color: #fef5da;
+}
+.insight-tab-right {
+  font-weight: bold;
+}
